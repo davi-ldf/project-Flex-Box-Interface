@@ -312,6 +312,18 @@ span, h2{
     color: #555;
     margin-top: 10px;
 }
+.menuMobile {
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+.mm-line {
+    height: 3px;
+    background-color: #39aae1;
+}
 
 @media (max-width: 600px) {
     .banner_headline {
@@ -342,5 +354,27 @@ span, h2{
     }
     .footer-copy{
         padding-left: 20px;
+    }
+    header .container {
+        flex-direction: row;
+    }
+    nav ul {
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #FFF;
+    }
+    header {
+        height: auto;
+    }
+    .logo {
+        padding-left: 20px;
+    }
+    .menuMobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
     }
 }
